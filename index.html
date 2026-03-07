@@ -1,18 +1,124 @@
-
-
 Hello world
 
 
-<!DOCTYPE html> <html lang="hu"> <head> <meta charset="UTF-8"> <meta name="viewport" content="width=device-width, initial-scale=1"> <title>Villanyszerelő Vállalkozás</title> <!-- Bootstrap CSS CDN --> <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> </head> <body>
+<!DOCTYPE html> <!-- Meghatározza, hogy a dokumentum HTML5 szabványt használ -->
+<html lang="hu"> <!-- A dokumentum nyelve magyar -->
 
-<!-- Navigation Bar --> <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <div class="container"> <a class="navbar-brand" href="#">Villanyszerelő</a> <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation"> <span class="navbar-toggler-icon"></span> </button> <div class="collapse navbar-collapse" id="navbarNav"> <ul class="navbar-nav ms-auto"> <li class="nav-item"> <a class="nav-link active" aria-current="page" href="#">Főoldal</a> </li> <li class="nav-item"> <a class="nav-link" href="#services">Szolgáltatások</a> </li> <li class="nav-item"> <a class="nav-link" href="#contact">Kapcsolat</a> </li> </ul> </div> </div> </nav>
+<head>
+    <meta charset="UTF-8"> <!-- Karakterkódolás: biztosítja, hogy az ékezetek helyesen jelenjenek meg -->
+    <meta name="viewport" content="width=device-width, initial-scale=1"> <!-- Reszponzív nézet mobilon -->
+    <title>Villanyszerelő Vállalkozás</title> <!-- A böngésző fülön megjelenő cím -->
 
-<!-- Hero Section --> <section class="bg-light text-center py-5"> <div class="container"> <h1 class="display-4">Megbízható Villanyszerelő Szolgáltatások</h1> <p class="lead">Gyors, precíz és profi megoldások otthonában és vállalkozásában.</p> <a href="#contact" class="btn btn-primary btn-lg mt-3">Lépjen kapcsolatba velünk</a> </div> </section>
+    <!-- Bootstrap CSS CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"> <!-- Bootstrap stílusok betöltése -->
+</head>
 
-<!-- Services Section --> <section id="services" class="py-5"> <div class="container"> <h2 class="mb-4 text-center">Szolgáltatásaink</h2> <div class="row"> <div class="col-md-4"> <div class="card mb-4 shadow-sm"> <div class="card-body"> <h5 class="card-title">Lakossági Villanyszerelés</h5> <p class="card-text">Villanyszerelési munkák gyorsan és megbízhatóan otthonában.</p> </div> </div> </div> <div class="col-md-4"> <div class="card mb-4 shadow-sm"> <div class="card-body"> <h5 class="card-title">Ipari Villanyszerelés</h5> <p class="card-text">Nagyobb ipari létesítmények villanyszerelési munkái szakértő kezekben.</p> </div> </div> </div> <div class="col-md-4"> <div class="card mb-4 shadow-sm"> <div class="card-body"> <h5 class="card-title">Hibaelhárítás</h5> <p class="card-text">Gyors és hatékony hibakeresés és javítás bármilyen elektromos problémára.</p> </div> </div> </div> </div> </div> </section>
+<body>
 
-<!-- Contact Section --> <section id="contact" class="bg-primary text-white py-5"> <div class="container"> <h2 class="mb-4 text-center">Lépjen kapcsolatba velünk</h2> <form class="mx-auto" style="max-width: 600px;"> <div class="mb-3"> <label for="name" class="form-label">Név</label> <input type="text" class="form-control" id="name" placeholder="Adja meg a nevét" required> </div> <div class="mb-3"> <label for="email" class="form-label">Email cím</label> <input type="email" class="form-control" id="email" placeholder="Adja meg az email címét" required> </div> <div class="mb-3"> <label for="message" class="form-label">Üzenet</label> <textarea class="form-control" id="message" rows="4" placeholder="Írja meg üzenetét" required></textarea> </div> <button type="submit" class="btn btn-light">Küldés</button> </form> </div> </section>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-primary"> <!-- Felső navigációs sáv, nagy képernyőn bővíthető -->
+        <div class="container"> <!-- Középre igazított tartalom -->
+            <a class="navbar-brand" href="#">Villanyszerelő</a> <!-- Logó / márkanév -->
+            
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" 
+                data-bs-target="#navbarNav" aria-controls="navbarNav"
+                aria-expanded="false" aria-label="Toggle navigation"> 
+                <span class="navbar-toggler-icon"></span> <!-- Mobilos menü ikon -->
+            </button>
 
-<!-- Bootstrap JS Bundle with Popper --> <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+            <div class="collapse navbar-collapse" id="navbarNav"> <!-- Összecsukható menü mobilon -->
+                <ul class="navbar-nav ms-auto"> <!-- Menüelemek jobbra igazítva -->
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="#">Főoldal</a> <!-- Aktív menüpont -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#services">Szolgáltatások</a> <!-- Ugrás a szolgáltatások részhez -->
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Kapcsolat</a> <!-- Ugrás a kapcsolat részhez -->
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
 
-</body> </html>
+    <!-- Hero Section -->
+    <section class="bg-light text-center py-5"> <!-- Fő bemutatkozó szakasz világos háttérrel -->
+        <div class="container"> <!-- Középre igazított tartalom -->
+            <h1 class="display-4">Megbízható Villanyszerelő Szolgáltatások</h1> <!-- Nagy cím -->
+            <p class="lead">Gyors, precíz és profi megoldások otthonában és vállalkozásában.</p> <!-- Alcím -->
+            <a href="#contact" class="btn btn-primary btn-lg mt-3">Lépjen kapcsolatba velünk</a> <!-- Gomb a kapcsolat részhez -->
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="py-5"> <!-- Szolgáltatások szakasz, azonosítóval -->
+        <div class="container">
+            <h2 class="mb-4 text-center">Szolgáltatásaink</h2> <!-- Szakasz címe -->
+
+            <div class="row"> <!-- 3 oszlopos elrendezés -->
+                
+                <div class="col-md-4"> <!-- 1. szolgáltatás -->
+                    <div class="card mb-4 shadow-sm"> <!-- Bootstrap kártya -->
+                        <div class="card-body">
+                            <h5 class="card-title">Lakossági Villanyszerelés</h5> <!-- Kártya címe -->
+                            <p class="card-text">Villanyszerelési munkák gyorsan és megbízhatóan otthonában.</p> <!-- Leírás -->
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4"> <!-- 2. szolgáltatás -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Ipari Villanyszerelés</h5>
+                            <p class="card-text">Nagyobb ipari létesítmények villanyszerelési munkái szakértő kezekben.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-4"> <!-- 3. szolgáltatás -->
+                    <div class="card mb-4 shadow-sm">
+                        <div class="card-body">
+                            <h5 class="card-title">Hibaelhárítás</h5>
+                            <p class="card-text">Gyors és hatékony hibakeresés és javítás bármilyen elektromos problémára.</p>
+                        </div>
+                    </div>
+                </div>
+
+            </div> <!-- row vége -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="bg-primary text-white py-5"> <!-- Kapcsolat szakasz kék háttérrel -->
+        <div class="container">
+            <h2 class="mb-4 text-center">Lépjen kapcsolatba velünk</h2>
+
+            <form class="mx-auto" style="max-width: 600px;"> <!-- Középre igazított űrlap -->
+                
+                <div class="mb-3">
+                    <label for="name" class="form-label">Név</label> <!-- Név mező címkéje -->
+                    <input type="text" class="form-control" id="name" placeholder="Adja meg a nevét" required> <!-- Név mező -->
+                </div>
+
+                <div class="mb-3">
+                    <label for="email" class="form-label">Email cím</label>
+                    <input type="email" class="form-control" id="email" placeholder="Adja meg az email címét" required> <!-- Email mező -->
+                </div>
+
+                <div class="mb-3">
+                    <label for="message" class="form-label">Üzenet</label>
+                    <textarea class="form-control" id="message" rows="4" placeholder="Írja meg üzenetét" required></textarea> <!-- Üzenet mező -->
+                </div>
+
+                <button type="submit" class="btn btn-light">Küldés</button> <!-- Küldés gomb -->
+            </form>
+        </div>
+    </section>
+
+    <!-- Bootstrap JS Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script> <!-- Bootstrap működéséhez szükséges JS -->
+
+</body>
+
+</html> 
